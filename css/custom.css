@@ -1,10 +1,10 @@
 /*! custom.css | MIT License */
 
-.column {
+/*.column {
   text-align: center;
 }
 
-.hero {
+.background-image {
   background: url(../images/mountain-man.jpg) no-repeat;
   background-size: cover;
   position: absolute;
@@ -17,3 +17,12 @@
 .hero .column {
   color: white;
 }
+
+.background-image:before {
+  content: "";
+  background-color: rgb(99, 99, 99);
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width:100%;
+}*/
