@@ -1,1 +1,1 @@
-# homepage
+### still a work in progress. i'm currently in the process of changing my website. once complete it will live and not on squarespace.
