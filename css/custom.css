@@ -20,6 +20,13 @@ section {
   margin-top: 2rem;
 }
 
+.details {
+  margin-top: 3.5rem;
+}
+
+.icon {
+  float: left;
+}
 
 /*.column {
   text-align: center;
