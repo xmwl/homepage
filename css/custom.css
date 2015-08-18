@@ -26,6 +26,11 @@ section {
 
 .icon {
   float: left;
+  margin-right: 3rem;
+}
+
+.icon.apple {
+  border-radius: 11px;
 }
 
 /*.column {
