@@ -33,6 +33,10 @@ section {
   border-radius: 11px;
 }
 
+.icon-link {
+  color: #222;
+}
+
 /*.column {
   text-align: center;
 }
