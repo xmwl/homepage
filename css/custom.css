@@ -50,6 +50,9 @@ section {
   color: #222;
 }
 
+.download {
+  font-size: .5rem;
+}
 
 @media screen and (max-width: 550px) {
   .hide {
