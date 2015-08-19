@@ -17,7 +17,12 @@ section {
   font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: .15rem;
-  margin-top: 2rem;
+  /*margin-top: 2.25rem;*/
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70px;
 }
 
 .details {
@@ -35,6 +40,24 @@ section {
 
 .icon-link {
   color: #222;
+}
+
+
+@media screen and (max-width: 550px) {
+  .hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+}
+
+.about-me {
+  border-top: 1px solid rgba(76, 76, 76, 0.17);
+}
+
+.puppies {
+  border-radius: 120px;
+  max-width: 124px;
 }
 
 /*.column {
