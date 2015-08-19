@@ -26,7 +26,6 @@ section {
   font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: .15rem;
-  /*margin-top: 2.25rem;*/
   margin: 0;
   display: flex;
   justify-content: center;
@@ -65,32 +64,5 @@ section {
 }
 
 .puppies {
-  max-width: 124px;
+  max-width: 200px;
 }
-
-/*.column {
-  text-align: center;
-}
-
-.background-image {
-  background: url(../images/mountain-man.jpg) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.hero .column {
-  color: white;
-}
-
-.background-image:before {
-  content: "";
-  background-color: rgb(99, 99, 99);
-  opacity: 0.5;
-  position: absolute;
-  height: 100%;
-  width:100%;
-}*/
