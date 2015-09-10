@@ -1,1 +1,3 @@
-### still a work in progress. i'm currently in the process of changing my website. once complete it will live here and not on squarespace.
+## live at savylacombe.com
+
+#### I used the simple responsive boilerplate from [Skeleton](http://getskeleton.com/) (because it's awesome) as a starting point, then modified it to fit my needs.
