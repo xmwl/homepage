@@ -2,6 +2,7 @@
 
 body {
   background: #f3f3f3;
+  font-family: Helvetica, sans-serif;
 }
 
 #content {
@@ -64,15 +65,26 @@ section {
   margin-bottom: 3rem;
 }
 
-h6 {
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 12px;
   text-transform: uppercase;
+}
+
+h6 {
+  font-size: 16px;
 }
 
 .project-title {
   /*text-transform: uppercase;*/
-  font-weight: 600;
+  /*font-weight: 600;*/
   /*font-size: 1.4rem;*/
-  letter-spacing: .15rem;
+  /*letter-spacing: .15rem;*/
+  display: inline!important;
   margin: 0;
   display: flex;
   display: -webkit-flex;
