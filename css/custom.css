@@ -87,14 +87,23 @@ h6 {
 .twitter:hover {
   color: #55acee;
 }
-.facebook:hover {
-  color: #3b5998;
-}
 .dribbble:hover {
   color: #ea4c89;
 }
-.twitter:hover {
-  color: #55acee;
+.instagram:hover {
+  color: #125677;
+}
+.get-pocket:hover {
+  color: #d5374b;
+}
+.github:hover {
+  color: #333;
+}
+.linkedin:hover {
+  color: #0077b5;
+}
+.email:hover{
+  color: rgba(50, 59, 67, 1.0);
 }
 
 .project-title {
