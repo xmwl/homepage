@@ -45,6 +45,11 @@ body {
   }
 }
 
+section.work {
+  border-bottom: 1px solid rgba(76, 76, 76, 0.17);
+  padding: 6rem 0 0 0;
+}
+
 section.intro {
   border-bottom: 1px solid rgba(76, 76, 76, 0.17);
   padding: 0 0 6rem 0;
@@ -64,6 +69,10 @@ section {
 
 .work .row {
   margin-bottom: 3rem;
+}
+
+.work.tastebud {
+  margin: 100px 0 0 0;
 }
 
 h4 {
@@ -128,8 +137,8 @@ h6 {
   /*height: 70px;*/
 }
 
-.row.details.project {
-  margin-top: 80px;
+.project {
+  margin-top: 60px;
 }
 
 .details {
