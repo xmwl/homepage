@@ -53,6 +53,8 @@ section.work {
 section.intro {
   border-bottom: 1px solid rgba(76, 76, 76, 0.17);
   padding: 0 0 6rem 0;
+  background: #344355;
+  color: #fff;
 }
 
 section {
@@ -95,7 +97,8 @@ h6 {
 
 .links a {
   margin-left: 10px;
-  color: rgba(50, 59, 67, 0.5);
+  color: #fff;
+  /*color: rgba(50, 59, 67, 0.5);*/
 }
 
 .twitter:hover {
