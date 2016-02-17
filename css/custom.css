@@ -61,6 +61,23 @@ section {
   padding: 6rem 0;
 }
 
+section.about-me {
+  text-align: center;
+  color: #fff;
+}
+
+.about-me a {
+  color: #fff;
+}
+
+.about-me .photos {
+  padding: 60px 0;
+}
+
+.about-me .photos .button {
+  border: 1px solid #fff;
+}
+
 .links {
   margin-bottom: 0;
 }
@@ -173,9 +190,26 @@ h6 {
   }
 }
 
+.button.button-primary {
+  background-color: #344355;
+  border-color: #344355;
+}
+
+.button.button-primary:hover {
+  background-color: #f3f3f3;
+  border: 1px solid #344355;
+  color: #344355;
+}
+
+.button:hover {
+  border: none;
+  background: white;
+  color: #333;
+}
+
 .about-me {
   border-top: 1px solid rgba(76, 76, 76, 0.17);
-  background: url(../assets/mountain_man.jpg);
+  background: url(../assets/mountain_man.jpg) no-repeat bottom right;
   background-size: cover;
 }
 
