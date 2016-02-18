@@ -78,6 +78,11 @@ section.about-me {
   border: 1px solid #fff;
 }
 
+.about-me h4 {
+  font-weight: 400;
+  letter-spacing: .2px;
+}
+
 .links {
   margin-bottom: 0;
 }
