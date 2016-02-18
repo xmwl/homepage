@@ -103,6 +103,15 @@ section.about-me {
   margin: 100px 0 0 0;
 }
 
+a:hover {
+  color: #3b4d61;
+}
+
+a {
+  color: #617d9e;
+  text-decoration: none;
+}
+
 p, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
