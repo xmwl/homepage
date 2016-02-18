@@ -2,7 +2,7 @@
 
 body {
   background: #f3f3f3;
-  font-family: Helvetica, sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
   color: #323B43;
 }
 
@@ -103,23 +103,42 @@ section.about-me {
   margin: 100px 0 0 0;
 }
 
+p, h2, h3, h4, h5, h6 {
+  letter-spacing: 0;
+}
+
+p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
 h2 {
-  font-size: 30px;
+  font-size: 36px;
+  font-family: "Mercury SSm A", "Mercury SSm B", serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 32px;
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 h5 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;  
 }
 
 h6 {
   font-size: 12px;
   text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.7;
 }
 
 .links a.twitter {
@@ -154,15 +173,15 @@ h6 {
 }
 
 .project-title {
-  display: inline!important;
+  /*display: inline!important;*/
   margin: 0;
-  display: flex;
+/*  display: flex;
   display: -webkit-flex;
   justify-content: center;
   -webkit-justify-content: center;
   flex-direction: column;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
+  -ms-flex-direction: column;*/
 }
 
 .project {
@@ -204,6 +223,12 @@ h6 {
     top: -9999px !important;
     left: -9999px !important;
   }
+}
+
+a.button {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: none;
 }
 
 .button.button-primary {
