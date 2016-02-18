@@ -161,6 +161,10 @@ h6 {
   margin-top: 60px;
 }
 
+.project .one-third.column h6 {
+  margin-bottom: 0;
+}
+
 .details {
   margin-top: 3.5rem;
 }
