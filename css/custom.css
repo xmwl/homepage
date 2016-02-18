@@ -1,31 +1,160 @@
 /*! custom.css | MIT License */
 
+body {
+  background: #f3f3f3;
+  font-family: Helvetica, sans-serif;
+  color: #323B43;
+}
+
+#content {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section.work {
+  border-bottom: 1px solid rgba(76, 76, 76, 0.17);
+  padding: 6rem 0 0 0;
+}
+
 section.intro {
   border-bottom: 1px solid rgba(76, 76, 76, 0.17);
   padding: 0 0 6rem 0;
+  background: #344355;
+  color: #fff;
 }
 
 section {
   padding: 6rem 0;
 }
 
+section.about-me {
+  text-align: center;
+  color: #fff;
+}
+
+.about-me a {
+  color: #fff;
+}
+
+.about-me .photos {
+  padding: 60px 0;
+}
+
+.about-me .photos .button {
+  border: 1px solid #fff;
+}
+
+.about-me h4 {
+  font-weight: 400;
+  letter-spacing: .2px;
+}
+
 .links {
   margin-bottom: 0;
 }
 
-.portfolio-of-awesome .row.section-header {
+.work .row.section-header {
   margin-bottom: 0;
 }
 
-.portfolio-of-awesome .row {
+.work.personal .row {
+  margin-bottom: 4.5rem;
+}
+
+.work .row {
   margin-bottom: 3rem;
 }
 
-.project-title {
+.work.tastebud {
+  margin: 100px 0 0 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 12px;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.4rem;
-  letter-spacing: .15rem;
+}
+
+.links a.twitter {
+  margin-left: 0;
+}
+
+.links a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.twitter:hover {
+  color: #55acee;
+}
+.dribbble:hover {
+  color: #ea4c89;
+}
+.instagram:hover {
+  color: #125677;
+}
+.get-pocket:hover {
+  color: #d5374b;
+}
+.github:hover {
+  color: #333;
+}
+.linkedin:hover {
+  color: #0077b5;
+}
+.email:hover{
+  color: rgba(50, 59, 67, 1.0);
+}
+
+.project-title {
+  display: inline!important;
   margin: 0;
   display: flex;
   display: -webkit-flex;
@@ -34,7 +163,14 @@ section {
   flex-direction: column;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  height: 70px;
+}
+
+.project {
+  margin-top: 60px;
+}
+
+.project .one-third.column h5 {
+  margin-bottom: 0;
 }
 
 .details {
@@ -58,6 +194,10 @@ section {
   font-size: .5rem;
 }
 
+.app-store img {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 550px) {
   .hide {
     position: absolute !important;
@@ -66,8 +206,27 @@ section {
   }
 }
 
+.button.button-primary {
+  background-color: #344355;
+  border-color: #344355;
+}
+
+.button.button-primary:hover {
+  background-color: #f3f3f3;
+  border: 1px solid #344355;
+  color: #344355;
+}
+
+.button:hover {
+  border: none;
+  background: white;
+  color: #333;
+}
+
 .about-me {
   border-top: 1px solid rgba(76, 76, 76, 0.17);
+  background: url(../assets/mountain_man.jpg) no-repeat bottom right;
+  background-size: cover;
 }
 
 .puppies {
