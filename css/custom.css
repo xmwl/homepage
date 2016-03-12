@@ -166,19 +166,19 @@ h6 {
   color: #ea4c89;
 }
 .instagram:hover {
-  color: #125677;
+  color: #04A0ED;
 }
 .get-pocket:hover {
   color: #d5374b;
 }
 .github:hover {
-  color: #333;
+  color: #000;
 }
 .linkedin:hover {
   color: #0077b5;
 }
 .email:hover{
-  color: rgba(50, 59, 67, 1.0);
+  color: #F44336;
 }
 
 .project-title {
