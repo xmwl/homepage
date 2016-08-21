@@ -237,6 +237,11 @@ h6 {
   margin-bottom: 2rem;
 }
 
+.web_titles {
+  padding-top: 25px;
+  text-transform: none;
+}
+
 @media screen and (max-width: 550px) {
   .hide {
     position: absolute !important;
