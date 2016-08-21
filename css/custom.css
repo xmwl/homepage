@@ -239,6 +239,7 @@ h6 {
 
 .web_titles {
   padding-top: 25px;
+  text-transform: none;
 }
 
 @media screen and (max-width: 550px) {
