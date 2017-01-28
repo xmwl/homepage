@@ -1,6 +1,27 @@
 /*! custom.css | MIT License */
 
-/*test pour papa*/
+body.home {
+  background: #344355;
+}
+
+body.home h3 {
+  font-size: 40px;
+}
+
+.sprout-social {
+  color: #fff;
+  text-decoration: underline;
+}
+
+body.home a.button.design-link {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+body.home div.row.links {
+  margin-top: 40px;
+}
+
 
 body {
   background: #f3f3f3;
@@ -52,7 +73,7 @@ section.work {
   padding: 6rem 0 0 0;
 }
 
-section.intro {
+body.design section.intro {
   border-bottom: 1px solid rgba(76, 76, 76, 0.17);
   padding: 0 0 6rem 0;
   background: #344355;
