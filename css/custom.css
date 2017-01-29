@@ -1,7 +1,8 @@
 /*! custom.css | MIT License */
 
 body.home {
-  background: #344355;
+  background: #298ced; /*#344355;*/
+  color: #fff;
 }
 
 body.home h3 {
@@ -13,9 +14,23 @@ body.home h3 {
   text-decoration: underline;
 }
 
-body.home a.button.design-link {
+body.home a.button.design-btn {
   margin-right: 20px;
   margin-left: 0;
+}
+
+.design-btn, .photos-btn {
+  background: white;
+  color: #298ced!important;
+  box-shadow: 0 3px 0 0 #999999;
+  border: none;
+}
+
+.design-btn:hover, .photos-btn:hover {
+  box-shadow: none;
+  background: #d4d4d4;
+  top: 3px;
+  position: relative;
 }
 
 body.home div.row.links {
