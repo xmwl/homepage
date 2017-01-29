@@ -1,7 +1,7 @@
 /*! custom.css | MIT License */
 
 body.home {
-  background: #298ced; /*#344355;*/
+  background: #298ced;
   color: #fff;
 }
 
@@ -9,9 +9,15 @@ body.home h3 {
   font-size: 40px;
 }
 
-.sprout-social {
+body.home .sprout-social {
   color: #fff;
   text-decoration: underline;
+}
+
+body.home .seven.columns.links a:hover {
+  background: white;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 body.home a.button.design-btn {
