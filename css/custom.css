@@ -1,6 +1,75 @@
 /*! custom.css | MIT License */
 
-/*test pour papa*/
+div.shadow {
+  height: 24px;
+  width: 331px;
+  background: yellow;
+  position: fixed;
+  top: 172px;
+  left: 571px;
+  opacity: 0.7;
+  z-index: -999;
+  -ms-tranform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+a.back {
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #fff;
+}
+
+a.back:hover {
+  opacity: 1.0;
+  color: #fff;
+}
+
+body.home {
+  background: #298ced;
+  color: #fff;
+}
+
+body.home h3 {
+  font-size: 40px;
+}
+
+body.home .sprout-social {
+  color: #fff;
+  text-decoration: underline;
+}
+
+body.home .seven.columns.links a:hover {
+  background: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+body.home a.button.design-btn {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.design-btn, .photos-btn {
+  background: white;
+  color: #298ced!important;
+  box-shadow: 0 3px 0 0 #999999;
+  border: none;
+}
+
+.design-btn:hover, .photos-btn:hover {
+  box-shadow: none;
+  background: #d4d4d4;
+  top: 3px;
+  position: relative;
+}
+
+body.home div.row.links {
+  margin-top: 40px;
+}
+
 
 body {
   background: #f3f3f3;
@@ -52,7 +121,7 @@ section.work {
   padding: 6rem 0 0 0;
 }
 
-section.intro {
+body.design section.intro {
   border-bottom: 1px solid rgba(76, 76, 76, 0.17);
   padding: 0 0 6rem 0;
   background: #344355;
