@@ -1,5 +1,32 @@
 /*! custom.css | MIT License */
 
+div.shadow {
+  height: 24px;
+  width: 331px;
+  background: yellow;
+  position: fixed;
+  top: 172px;
+  left: 571px;
+  opacity: 0.7;
+  z-index: -999;
+  -ms-tranform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+a.back {
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #fff;
+}
+
+a.back:hover {
+  opacity: 1.0;
+  color: #fff;
+}
+
 body.home {
   background: #298ced;
   color: #fff;
