@@ -14,6 +14,12 @@ div.shadow {
   transform: rotate(4deg);
 }
 
+a.sprout-social:hover {
+    text-decoration: blink;
+    color: #298ced;
+    background: white;
+}
+
 a.back {
   font-weight: 400;
   text-transform: none;
