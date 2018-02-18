@@ -6,6 +6,7 @@ html,body{
   margin:0;
   background: #191919;
   color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 *{
@@ -14,270 +15,34 @@ html,body{
 
 .box{
   width:800px;
-  /* height:100px; */
-  /* background-color:red; */
   padding: 20px
 }
 
 .container{
   width:100%;
   height:100%;
-  /* background-color:#ccc; */
   display:flex;
   justify-content:center;
   align-items:center;
 }
 
-/* body .seven.columns.links a:hover {
-  background: white;
-  border-radius: 4px;
-  padding: 4px;
-} */
-
-
-body h3 {
+h3 {
   font-size: 40px;
-}
-
-body .sprout-social {
-  color: #fff;
-  text-decoration: underline;
-}
-
-body .sprout-social:hover {
-  text-decoration: blink;
-  color: #298ced;
-  background: white;
-}
-
-
-/*
-.block {
-  box-shadow: inset 0px -20px 0px 0px rgba(255, 255, 0, .7);
-}
-
-a.back {
-  font-weight: 400;
-  text-transform: none;
-  font-size: 16px;
-  opacity: 0.5;
-  color: #fff;
-}
-
-a.back:hover {
-  opacity: 1.0;
-  color: #fff;
-}
-
-body.home {
-  background: #298ced;
-  color: #fff;
-}
-
-body.home h3 {
-  font-size: 40px;
-}
-
-body.home .sprout-social {
-  color: #fff;
-  text-decoration: underline;
-}
-
-body.home .sprout-social:hover {
-  text-decoration: blink;
-  color: #298ced;
-  background: white;
-}
-
-body.home .seven.columns.links a:hover {
-  background: white;
-  border-radius: 4px;
-  padding: 4px;
-}
-
-body.home a.button.design-btn {
-  margin-right: 20px;
-  margin-left: 0;
-}
-
-.design-btn, .photos-btn {
-  background: white;
-  color: #298ced!important;
-  box-shadow: 0 3px 0 0 #999999;
-  border: none;
-}
-
-.design-btn:hover, .photos-btn:hover {
-  box-shadow: none;
-  background: #d4d4d4;
-  top: 3px;
-  position: relative;
-}
-
-body.home div.row.links {
-  margin-top: 40px;
-}
-
-
-body {
-  background: #f3f3f3;
-  font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
-  color: #323B43;
-}
-
-#content {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-moz-keyframes fadein { /* Firefox */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-o-keyframes fadein { /* Opera */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-section.work {
-  /*border-bottom: 1px solid rgba(76, 76, 76, 0.17);*/
-  padding: 6rem 0 0 0;
-}
-
-body.design section.intro {
-  border-bottom: 1px solid rgba(76, 76, 76, 0.17);
-  padding: 0 0 6rem 0;
-  background: #344355;
-  color: #fff;
-}
-
-div.divider {
-  background: #fff;
-  padding: 50px;
-}
-
-section {
-  padding: 6rem 0;
-}
-
-section.about-me {
-  text-align: center;
-  color: #fff;
-}
-
-.about-me a {
-  color: #fff;
-}
-
-.about-me .photos {
-  padding: 60px 0;
-}
-
-.about-me .photos .button {
-  border: 1px solid #fff;
-}
-
-.about-me h4 {
-  font-weight: 400;
-  letter-spacing: .2px;
-}
-
-.links {
-  margin-bottom: 0;
-}
-
-.work .row.section-header {
-  margin-bottom: 0;
-}
-
-.work.personal .row {
-  margin-bottom: 4.5rem;
-}
-
-.work .row.details.project {
-  margin-bottom: 6rem
-}
-
-.work .row {
-  margin-bottom: 3rem;
-}
-
-
-.work.tastebud {
-  margin: 100px 0 0 0;
-}
-
-a:hover {
-  color: #3b4d61;
+  font-weight: 700;
 }
 
 a {
-  color: #617d9e;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+
+.sprout-social:hover {
+  text-decoration: blink;
+  color: white;
 }
 
 p, h2, h3, h4, h5, h6 {
   letter-spacing: 0!important;
-}
-
-p {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-h2 {
-  font-size: 36px;
-  font-family: "Mercury SSm A", "Mercury SSm B", serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 32px;
-}
-
-h4 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-h5 {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-h6 {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-  opacity: 0.7;
 }
 
 .links a.photos {
@@ -288,116 +53,3 @@ h6 {
   margin-left: 10px;
   color: #fff;
 }
-/*
-.twitter:hover {
-  color: #55acee;
-}
-.dribbble:hover {
-  color: #ea4c89;
-}
-.instagram:hover {
-  color: #04A0ED;
-}
-.get-pocket:hover {
-  color: #d5374b;
-}
-.github:hover {
-  color: #000;
-}
-.linkedin:hover {
-  color: #0077b5;
-}
-.email:hover{
-  color: #F44336;
-} */
-
-.project-title {
-  /*display: inline!important;*/
-  margin: 0;
-/*  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;*/
-}
-
-.project {
-  margin-top: 60px;
-}
-
-.project .one-third.column h5 {
-  margin-bottom: 0;
-}
-
-.details {
-  margin-top: 3.5rem;
-}
-
-.icon {
-  float: left;
-  margin-right: 3rem;
-}
-
-.icon.apple {
-  border-radius: 11px;
-}
-
-.icon-link {
-  color: #222;
-}
-
-.download {
-  font-size: .5rem;
-}
-
-.app-store img {
-  margin-bottom: 2rem;
-}
-
-.web_titles {
-  padding-top: 25px;
-  text-transform: none;
-}
-
-@media screen and (max-width: 550px) {
-  .hide {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-  }
-}
-
-a.button {
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: none;
-}
-
-.button.button-primary {
-  background-color: #344355;
-  border-color: #344355;
-}
-
-.button.button-primary:hover {
-  background-color: #f3f3f3;
-  border: 1px solid #344355;
-  color: #344355;
-}
-
-.button:hover {
-  border: none;
-  background: white;
-  color: #333;
-}
-
-.about-me {
-  border-top: 1px solid rgba(76, 76, 76, 0.17);
-  background: url(../assets/massif_mont_blanc.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.puppies {
-  max-width: 200px;
-} */
