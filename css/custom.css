@@ -51,5 +51,21 @@ p, h2, h3, h4, h5, h6 {
 
 .links a {
   margin-left: 10px;
-  color: #fff;
+  color: #000;
+}
+
+.case_study {
+  font-size: 16px;
+  color: #000;
+  /* text-decoration: none; */
+}
+
+.case_study:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+body.portfolio {
+  background: #f3f4f4;
+  color: #000;
 }
