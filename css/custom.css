@@ -122,8 +122,10 @@ a:focus-visible {
 .site-main {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--space-4);
   padding: var(--space-3);
 }
 
@@ -163,6 +165,30 @@ a:focus-visible {
 .links a:hover,
 .links a:focus-visible {
   color: var(--accent);
+}
+
+.whats-up {
+  width: 100%;
+  max-width: 800px;
+}
+
+.whats-up-title {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.whats-up p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: var(--space-1);
+}
+
+.whats-up p:last-child {
+  margin-bottom: 0;
 }
 
 /* Placeholder pages
