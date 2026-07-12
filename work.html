@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Savy Lacombe</title>
+  <title>Work — Savy Lacombe</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -44,17 +44,24 @@
     </nav>
   </header>
   <main class="site-main">
-    <div class="card">
-      <h1 class="headline">Savy Lacombe is a <span class="block">product design manager</span> at <a href="http://sproutsocial.com/" class="sprout-social">Sprout Social</a>.<span class="emoji"> 👋</span></h1>
-      <div class="links">
-        <a class="email" href="mailto:xmlacomb@gmail.com?Subject=Hello!" target="_blank"><i class="fa fa-envelope fa-lg"></i></a>
-        <a class="linkedin" href="https://www.linkedin.com/in/xavierlacombe" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-        <a class="instagram" href="https://www.instagram.com/xmwl/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-        <a class="github" href="https://github.com/xmwl" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-        <a class="photos" href="http://www.savylacombephotos.com/" target="_blank"><i class="fa fa-camera fa-lg"></i></a>
-      </div>
+    <div class="card gate" id="work-gate">
+      <span class="meta-label">Work</span>
+      <h1 class="page-title">This page is password protected</h1>
+      <form id="work-gate-form">
+        <div class="gate-field">
+          <label class="sr-only" for="work-gate-password">Password</label>
+          <input type="password" id="work-gate-password" name="password" placeholder="Password" autocomplete="off" required>
+          <button type="submit">Unlock</button>
+        </div>
+        <p class="gate-error" id="work-gate-error" role="alert"></p>
+      </form>
+    </div>
+    <div class="card" id="work-content" hidden>
+      <span class="meta-label">Work</span>
+      <h1 class="page-title">Coming soon</h1>
     </div>
   </main>
   <script src="js/site.js"></script>
+  <script src="js/work-gate.js"></script>
 </body>
 </html>
