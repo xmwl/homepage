@@ -152,6 +152,10 @@ a:focus-visible {
   margin-bottom: var(--space-3);
 }
 
+.headline .highlight {
+  color: var(--accent);
+}
+
 .links {
   display: flex;
   gap: var(--space-2);
