@@ -1,5 +1,5 @@
 (function () {
-  var current = location.pathname.split('/').pop() || 'index.html';
+  var current = location.pathname.replace(/index\.html$/, '').replace(/(.)\/$/, '$1') || '/';
   var links = document.querySelectorAll('.site-header a[href]');
 
   links.forEach(function (link) {
