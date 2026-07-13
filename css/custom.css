@@ -272,6 +272,60 @@ a:focus-visible {
   border: 0;
 }
 
+/* Gilly
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.gilly {
+  position: fixed;
+  bottom: 0;
+  right: calc(var(--space-3) + 100px);
+  z-index: 10;
+}
+
+.gilly-img {
+  display: block;
+  width: 96px;
+  height: 104px;
+  position: relative;
+  z-index: 1;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  transition: transform 0.2s ease;
+  transform-origin: bottom center;
+}
+
+.gilly:hover .gilly-img,
+.gilly.is-active .gilly-img {
+  transform: translateY(-6px) rotate(-4deg);
+}
+
+.gilly-speech {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  padding: 6px 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.gilly:hover .gilly-speech,
+.gilly.is-active .gilly-speech {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -8px);
+}
+
 /* Responsive
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -296,5 +350,14 @@ a:focus-visible {
 
   .gate-field {
     flex-direction: column;
+  }
+
+  .gilly {
+    right: calc(var(--space-2) + 100px);
+  }
+
+  .gilly-img {
+    width: 72px;
+    height: 78px;
   }
 }
