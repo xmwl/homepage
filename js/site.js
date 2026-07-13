@@ -7,4 +7,11 @@
       link.setAttribute('aria-current', 'page');
     }
   });
+
+  var gilly = document.querySelector('.gilly');
+  if (gilly) {
+    gilly.addEventListener('click', function () {
+      gilly.classList.toggle('is-active');
+    });
+  }
 })();
