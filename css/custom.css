@@ -5,7 +5,7 @@
   --bg-elevated: #1a1a1a;
   --text: #f5f2ec;
   --text-muted: #9a958c;
-  --accent: #f2b94d;
+  --accent: #e2896f;
   --accent-ink: #1a1305;
   --error: #e5836b;
   --border: #33312c;
@@ -193,6 +193,44 @@ a:focus-visible {
 
 .whats-up p:last-child {
   margin-bottom: 0;
+}
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.about-intro {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: var(--space-2);
+}
+
+.about-intro:last-child {
+  margin-bottom: 0;
+}
+
+.about-section {
+  width: 100%;
+  max-width: 800px;
+}
+
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-list li {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: var(--space-1);
+}
+
+.about-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about-list strong {
+  color: var(--accent);
 }
 
 /* Placeholder pages
