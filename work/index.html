@@ -57,9 +57,123 @@
         <p class="gate-error" id="work-gate-error" role="alert"></p>
       </form>
     </div>
-    <div class="card" id="work-content" hidden>
-      <span class="meta-label">Work</span>
-      <h1 class="page-title">Coming soon</h1>
+    <div class="work" id="work-content" hidden>
+      <div class="card">
+        <span class="meta-label">Work</span>
+        <h1 class="page-title">Recent work</h1>
+        <p class="work-intro">A few short snapshots from the last year at Sprout Social. Happy to go deeper on any of them.</p>
+      </div>
+
+      <article class="card work-item">
+        <span class="meta-label">Design lead · Jan to Apr 2026</span>
+        <h2 class="work-title">Unified Navigation &amp; Accessibility</h2>
+        <p class="work-body">Sprout's navigation had grown into two competing rails, it wasn't accessible, and our AI agent Trellis had no clear home. We had a hard compliance deadline and a big enterprise deal waiting on an updated VPAT.</p>
+        <p class="work-body">I worked closely with our engineering manager and PM to co-lead the project. Together we built the rollout plan, lined up CX and Support, ran the exec conversations, and worked through the tradeoffs between design, engineering and accessibility. Accessibility shaped the interaction model itself. We moved the hover trigger off the empty container and onto the nav items, so mouse and keyboard users get the same experience. When a designer on the team flagged that the motion felt slow, I backed their case with session recordings and helped get faster timing tested.</p>
+        <p class="work-body">We rolled out in stages, 10% then 60% then 100%, with a toggle back to the old nav so we could measure real preference.</p>
+        <div class="work-shots">
+          <figure class="work-shot">
+            <img src="https://media.sproutsocial.com/uploads/2026/04/Screenshot-2026-04-16-at-1.55.18-PM.png" alt="Side-by-side comparison of the Publishing navigation. Left, the old layout: a wide labeled primary rail next to a separate secondary menu. Right, the new unified nav: a compact icon rail with the Publishing menu, including a New Post button and collapsible Campaigns section, beside the calendar." loading="lazy">
+            <figcaption>Before / after: the old two-level nav vs. the new compact rail with collapsible sections and the key action up top</figcaption>
+          </figure>
+          <figure class="work-shot">
+            <img src="https://media.sproutsocial.com/uploads/2026/04/Screenshot-2026-04-16-at-1.56.35-PM.png" alt="Side-by-side comparison of the group switcher. Left, the old version: a full-height panel listing every group. Right, the new version: a compact searchable popover anchored to the nav, leaving the calendar visible." loading="lazy">
+            <figcaption>Before / after: the group switcher went from a full-height takeover to a searchable popover that keeps you in context</figcaption>
+          </figure>
+        </div>
+        <blockquote class="work-quote">
+          <p>"We're approaching it not only to meet the current accessibility standards, but to set ourselves up so that we can bake accessibility into our design and development cycles."</p>
+          <cite>Me, in <a href="https://sproutsocial.com/insights/sprout-social-accessibility/" target="_blank" rel="noopener">Sprout's accessibility announcement</a></cite>
+        </blockquote>
+        <h3 class="work-subhead">Results</h3>
+        <ul class="work-list">
+          <li><strong>83% task success</strong> in research, above the 82% benchmark for the old nav</li>
+          <li><strong>~40% came back.</strong> People who switched to the old nav returned to the new one on their own</li>
+          <li><strong>No engagement drop</strong> as core actions moved to their new home</li>
+          <li><strong>WCAG 2.1 AA</strong> compliance, a public VPAT, and 440+ remediation items closed (<a href="https://sproutsocial.com/insights/sprout-social-accessibility/" target="_blank" rel="noopener">read the announcement</a>)</li>
+          <li><strong>Built to last:</strong> an accessibility health dashboard and automated a11y checks on every deploy</li>
+        </ul>
+      </article>
+
+      <article class="card work-item">
+        <span class="meta-label">R&amp;D-wide initiative lead · Aug 2026 to now</span>
+        <h2 class="work-title">Burning Down Papercuts with an AI Coding Agent <span class="status-badge">In progress</span></h2>
+        <p class="work-body">Small UX fixes always lose out to the roadmap. They pile up in the backlog and quietly wear down how the product feels. I wanted to see if an autonomous coding agent could clear them without taking engineering time away from bigger work.</p>
+        <p class="work-body">I started by pushing the agent myself on frontend, backend and AI-product tickets. In one early test an engineer reviewed and merged the fix in about a minute, calling it something the team "would have probably never fixed." That was enough to make it a real program, and leadership named me the lead for an R&amp;D-wide simplification push.</p>
+        <figure class="work-shot work-shot--spaced work-shot--narrow">
+          <img src="/images/work/papercuts-assignee.webp" alt="A Jira ticket's Details panel with the assignee set to Sprout Auto Agent, shown with a small robot avatar." loading="lazy">
+          <figcaption>The whole handoff: assign the ticket to the agent and it opens a PR</figcaption>
+        </figure>
+        <p class="work-body">To make it repeatable I built a Claude skill that turns a vague problem into a ticket the agent can act on the first time. I wrote how-to guides for designers, got designers GitHub access, and set up a triage agent that checks incoming tickets and asks the reporter follow-up questions before handing off. Designers review on a test site and leave feedback right in GitHub. An engineer still approves every PR.</p>
+        <div class="work-shots-grid work-shots-grid--top">
+          <figure class="work-shot">
+            <img src="/images/work/papercuts-rovo-agent.webp" alt="The Sprout Auto-Agent Organizer, a Rovo agent built by Savy Lacombe, with conversation starters like 'Prepare this ticket for the Auto Agent' and 'Is this a good fit for the Auto Agent?', a list of attached knowledge sources (blurred), and its setup instructions." loading="lazy">
+            <figcaption>The triage agent I built. It checks if a papercut is a good fit and preps the ticket</figcaption>
+          </figure>
+          <figure class="work-shot">
+            <img src="/images/work/papercuts-agent-instructions.webp" alt="Agent instructions describing a six-step sequence: read the ticket and comments, reformat it into the template, find gaps that would make the auto agent guess, comment tagging the reporter, set status to Triage or Needs Discussion, and report back." loading="lazy">
+            <figcaption>Its six-step playbook: read, reformat, find gaps, ask the reporter, set status, report</figcaption>
+          </figure>
+        </div>
+        <h3 class="work-subhead">Early results</h3>
+        <ul class="work-list">
+          <li><strong>14 agent-built PRs</strong> across 3 repos in the first cycle</li>
+          <li><strong>Designers shipping production fixes</strong> without waiting on engineering capacity</li>
+          <li><strong>Spreading on its own.</strong> Other teams are building their own guides and skills on top of the process</li>
+          <li><strong>Honest lessons</strong> fed back in, like the agent skipping our translation pipeline</li>
+        </ul>
+        <h3 class="work-subhead">What's next</h3>
+        <p class="work-body">We just wrapped the first cycle and are tightening the loop for the next one. Papercut tickets now get grouped and handed straight to the agent, and every PR ships with instructions for the reviewer. We're also fixing the gaps we found, like translations, and working papercut review into the engineering support rotation so it keeps going without someone having to push it along.</p>
+      </article>
+
+      <article class="card work-item">
+        <span class="meta-label">Co-lead, Product Design-wide · Jun 2026 to now</span>
+        <h2 class="work-title">Web Design Playground</h2>
+        <p class="work-body">Figma prototypes don't behave like the real app, and the barrier for designers to build real UI was high. So we built a shared playground where designers and PMs use Claude Code to rebuild and prototype Sprout pages 1:1, using our real design system components. The inspiration came from the work Brian Lovin has done on Notion's design playground, which he walks through in <a href="https://youtu.be/s4HGbIhUgVo" target="_blank" rel="noopener">this podcast episode</a>.</p>
+        <figure class="work-shot work-shot--spaced">
+          <img src="/images/work/playground-home.webp" alt="The Web Design Playground home page: a welcome card telling people to reach out to Savy for setup help, a description of the playground as a fast prototyping environment built on Sprout's component library, and cards for the design system and ready-to-prototype setup." loading="lazy">
+          <figcaption>The playground home. Built on our real design system, with me as the go-to for getting set up</figcaption>
+        </figure>
+        <p class="work-body">I co-led it with an engineering partner. I built the page templates and shipped features from user feedback, like a components browser, sorting and a production-accurate AI chat. I also built a "promote prototype" workflow that turns a playground prototype into a starting PR for the real app.</p>
+        <div class="work-shots">
+          <figure class="work-shot">
+            <img src="/images/work/playground-report-template.webp" alt="A Reports template in the playground: a pixel-accurate rebuild of Sprout's report page with the app nav rail, Reports secondary nav, a Trellis banner, summary stats comparing your average to competitors, and an audience growth chart. Clone and View full screen buttons sit above it." loading="lazy">
+            <figcaption>A Reports template, rebuilt 1:1 with real components. Hit Clone and you're building</figcaption>
+          </figure>
+          <div class="work-shots-grid">
+            <figure class="work-shot">
+              <img src="/images/work/playground-templates.webp" alt="The Templates page listing reusable starting points like Listening Home, Listening Topic Dashboard, Listening Trial, Listening Query Builder, Report Example and Reports Home, each with a short description and date." loading="lazy">
+              <figcaption>Shared templates give everyone the same starting point</figcaption>
+            </figure>
+            <figure class="work-shot">
+              <img src="/images/work/playground-query-builder.webp" alt="A Listening query builder prototype for creating a new topic, with a topic preview and a production-accurate Trellis chat panel open on the right." loading="lazy">
+              <figcaption>Interactive flows, including a production-accurate Trellis chat</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="work-body">The tool was only half the job. Most designers had never touched GitHub, so I focused just as much on teaching the team. I ran hands-on jams, starting with setup and then a follow-up on branching and opening your first PR. I made a step-by-step FigJam guide and held regular office hours. I also set up processes so GitHub felt safe instead of scary. I got designers write access, and I pushed for prototype-only PRs to skip engineering review, which became a company-wide exception. Designers now share work through PRs and give feedback in GitHub comments, the same way engineers do.</p>
+        <h3 class="work-subhead">Results</h3>
+        <ul class="work-list">
+          <li><strong>~140 PRs</strong> to the playground in its first 3 months</li>
+          <li><strong>Designers shipping through GitHub.</strong> Designers who'd never opened a PR are now contributing and reviewing prototypes regularly</li>
+          <li><strong>Hours, not days.</strong> An interactive query builder took about an hour, versus a full day as a static Figma component</li>
+          <li><strong>Prototype to production.</strong> Playground work has become shipped design system components</li>
+          <li><strong>Other product teams</strong> asking for their own version</li>
+        </ul>
+      </article>
+
+      <article class="card work-item">
+        <span class="meta-label">Design director &amp; vision owner · Dec 2025 to now</span>
+        <h2 class="work-title">Leadership: Composable, AI-First Surfaces</h2>
+        <p class="work-body">Sprout's product areas are siloed, and most pages are fixed and one-off. I've been leading the vision for a composable UI platform. It's a flexible foundation where both people and AI can assemble the right view for the moment.</p>
+        <p class="work-body">I wrote the early platform strategy and tied a long-range "concept car" vision to a concrete first slice. That slice is AI-generated insight stories that tell you what happened and what to do next, which can open into a workspace for taking action. I held the line on a key product principle: opinionated narratives, not another configurable report builder.</p>
+        <p class="work-body">A lot of the work is alignment. I demoed the foundation and flows to the exec steering committee, set up a cross-team channel to get several groups building on a shared visual standard, and when engineering worried the architecture was too complex, I reframed a simpler path as an experiment so we could deliver sooner. I also coached the lead designer on the team, and I prototype in code myself. When a VP asked for a concept, I had a working prototype the same day.</p>
+        <h3 class="work-subhead">Where it's at</h3>
+        <ul class="work-list">
+          <li><strong>Platform foundation</strong> live in production</li>
+          <li><strong>First AI-generated stories</strong> rendering in production internally, with customer interviews underway</li>
+          <li><strong>One shared foundation.</strong> Other teams are building on it instead of shipping one-off versions</li>
+        </ul>
+      </article>
     </div>
   </main>
   <script src="/js/site.js"></script>
