@@ -208,6 +208,15 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
+.contact-portrait {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin-bottom: var(--space-3);
+  border-radius: var(--radius);
+}
+
 .about-section {
   width: 100%;
   max-width: 800px;
