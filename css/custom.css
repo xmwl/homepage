@@ -439,9 +439,9 @@ a:focus-visible {
 .work-shot figcaption {
   margin-top: var(--space-1);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
-  color: var(--text-muted);
+  color: #b0aba2;
 }
 
 .work-quote {
