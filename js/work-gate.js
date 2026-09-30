@@ -1,5 +1,5 @@
 (function () {
-  var PASSWORD = 'password';
+  var PASSWORD = 'gilly';
   var STORAGE_KEY = 'work-unlocked';
 
   var gate = document.getElementById('work-gate');
