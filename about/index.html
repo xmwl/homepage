@@ -13,10 +13,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+  (function () {
+    var theme;
+    try { theme = localStorage.getItem('theme'); } catch (e) {}
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  </script>
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/custom.css?v=theme1">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -43,6 +54,9 @@
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+      <i class="fa fa-sun-o" aria-hidden="true"></i>
+    </button>
   </header>
   <main class="site-main">
     <div class="card">
@@ -71,6 +85,6 @@
       </ul>
     </section>
   </main>
-  <script src="/js/site.js"></script>
+  <script src="/js/site.js?v=theme1"></script>
 </body>
 </html>

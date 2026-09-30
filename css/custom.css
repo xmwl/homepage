@@ -5,6 +5,7 @@
   --bg-elevated: #1a1a1a;
   --text: #f5f2ec;
   --text-muted: #9a958c;
+  --text-caption: #b0aba2;
   --accent: #e2896f;
   --accent-ink: #1a1305;
   --error: #e5836b;
@@ -17,6 +18,20 @@
   --space-2: 16px;
   --space-3: 24px;
   --space-4: 40px;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f6f3ee;
+  --bg-elevated: #ffffff;
+  --text: #1c1a17;
+  --text-muted: #6b665e;
+  --text-caption: #5f5a52;
+  --accent: #a84a33;
+  --accent-ink: #ffffff;
+  --error: #b23a22;
+  --border: #d9d3c7;
+  color-scheme: light;
 }
 
 *,
@@ -87,6 +102,31 @@ a:focus-visible {
 .site-logo:focus-visible,
 .site-logo[aria-current="page"] {
   color: var(--accent);
+}
+
+.site-header nav {
+  margin-left: auto;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 .site-nav {
@@ -441,7 +481,7 @@ a:focus-visible {
   font-family: var(--font-mono);
   font-size: 13px;
   line-height: 1.5;
-  color: #b0aba2;
+  color: var(--text-caption);
 }
 
 .work-quote {
@@ -540,9 +580,20 @@ a:focus-visible {
 
 @media (max-width: 600px) {
   .site-header {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-1);
+  }
+
+  .site-header nav {
+    margin-left: 0;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-3);
   }
 
   .site-nav {
